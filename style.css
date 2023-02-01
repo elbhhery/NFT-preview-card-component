@@ -1,0 +1,170 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Outfit', sans-serif;
+	background: #0D192C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+h2,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/*----------Typography----------*/
+
+.component-title {
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.component-text {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 300;
+	color: #8BACD9;
+}
+
+.eth-price {
+	font-weight: 600;
+	line-height: 20px;
+	color: #00FFF8;
+}
+
+.time-left {
+	font-weight: 400;
+	line-height: 20px;
+	color: #8BACD9;
+}
+
+.accent-color {
+	color: #8BACD9;
+}
+
+.bottom-text {
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.creator,
+.component-title{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+/*----------Layout----------*/
+
+.flex {
+	display: flex;
+}
+
+.component {
+	background: #15263F;
+	border-radius: 15px;
+	max-width: 350px;
+}
+
+.component-wrapper {
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+.component-img {
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	border-radius: 8px;
+	height: 302px;
+	width: 302px;
+	position: relative;
+	transition: .3s ease-in-out;
+}
+
+.img-wrapper {
+	position: relative;
+	background: #00FFF8;
+	border-radius: 12px;
+}
+
+.hover {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	transition: .3s ease-in-out;
+}
+
+.img-wrapper:hover,
+.img-wrapper:focus{
+	cursor: pointer;
+}
+
+.img-wrapper:hover .component-img,
+.img-wrapper:focus .component-img{
+	opacity: .5;
+}
+
+.img-wrapper:hover .hover,
+.img-wrapper:focus .hover{
+	opacity: 1;
+}
+
+.component-text {
+	margin-top: 16px;
+	margin-bottom: 24px;
+}
+
+.eth-img {
+	margin-right: 6px;
+}
+
+.clock-img {
+	margin-right: 7px;
+}
+
+.lower-wrapper {
+	justify-content: space-between;
+	border-bottom: 1px solid #2E405A;
+	padding-bottom: 24px;
+	margin-bottom: 16px;
+}
+
+.bottom-wrapper {
+	margin-bottom: 32px;
+}
+
+.bottom-img {
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 33px;
+	margin-right: 16px;
+}
+
+.bottom-text {
+	align-self: center;
+}
+
+.creator:hover,
+.component-title:hover{
+	color: #00FFF8;
+}
+
+.creator:focus,
+.component-title:focus{
+	color: #00FFF8;
+}
